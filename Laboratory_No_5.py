@@ -1,18 +1,14 @@
-#Label Window
 from tkinter import *
-window = Tk()
 
-window.title("Label")
-window.geometry("350x100")
+top = Tk()
+top.title("Label")
+top.geometry("400x250")
 
-label = Label(window,text="Laboratory Activity 5")
-label.place(x=110, y=30)
 
-label2 = Label(window,text="Submitted to: Mam Sayo")
-label2.place(x=100,y=50)
+Lab = Label(top, text="Laboratory Activity 5").place(x = 200, y = 100, anchor="center")
+Prof = Label(top, text = "Submitted to: Mam Sayo").place(x = 200, y = 140,anchor="center")
 
-window.mainloop()
-
+top.mainloop()
 
 #Text Field Window
 from tkinter import *
@@ -45,25 +41,28 @@ label.place(x=100, y=200)
 window.mainloop()
 
 
-#Major Subjects Window
+#4 
 from tkinter import *
 
-window = Tk()
+top = Tk()
 
-window.title("Major Subjects")
-window.geometry("350x150")
+top.title("Major Subjects")
 
+top.geometry("250x250")
 
-Lb1 = Listbox(window, width=25, height=6)
-Lb1.insert(1, "reading")
-Lb1.insert(2, "writing")
-Lb1.insert(3, "arithmetic")
-Lb1.insert(4, "coding")
+listbox = Listbox(top)
 
+listbox.insert(1,"reading")
 
-Lb1.pack()
-window.mainloop()
+listbox.insert(2, "writing")
 
+listbox.insert(3, "arithmetic")
+
+listbox.insert(4, "coding")
+
+listbox.pack()
+
+top.mainloop()
 
 #Button Window
 from tkinter import *
